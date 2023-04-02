@@ -1,0 +1,16 @@
+<div class="container" *ngIf="book">
+    <div class="left sub-container">
+        <img src="{{book.preivewImgUrl}}" alt="image">
+    </div>
+    <div class="right sub-container">
+        <div class="top">
+            <span>{{book.title}}</span>
+            <span>{{book.price}}</span>
+            <!-- <span>{{book.description}}</span> -->
+        </div>
+        <div class="bottom">
+            <button>Add to cart</button>
+            <office2023-button text="Add to cart"></office2023-button>
+        </div>
+    </div>
+</div>

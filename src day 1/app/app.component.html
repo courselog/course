@@ -1,0 +1,3 @@
+<div *ngIf="response$ | async as resp">
+  <ng-container *ngFor="let item of resp"> {{item | json}} </ng-container>
+</div>

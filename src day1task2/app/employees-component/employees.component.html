@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="nameInput" (keydown.enter)="addEmployee()">
+<button (click)="addEmployee()">Add</button>
+<div class="emp-row" *ngFor="let employee of employees; index as i">
+    <span>
+        {{employee.name}}
+    </span>
+    <span>
+        {{employee.fiboNum}}
+    </span>
+    <button (click)="deleteEmp(i)">Delete</button>
+</div>

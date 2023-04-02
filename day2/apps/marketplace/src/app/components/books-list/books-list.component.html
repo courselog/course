@@ -1,0 +1,7 @@
+<h1>books list</h1>
+<div *ngIf="booksList$ | async as books">
+    <div *ngFor="let book of books">
+        <!-- {{book|json}} -->
+        <office2023-book [book]="book"></office2023-book>
+    </div>
+</div>
